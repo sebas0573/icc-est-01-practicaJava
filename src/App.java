@@ -24,7 +24,14 @@ public class App {
         System.out.println(palabras);
 
         //contar cuantas a hay en la cadena
-        int letraA = cadena.split("")[4].length();
-        System.out.println(letraA);
+        char letraA = 'a';
+        int contador = 0;
+
+        for(int i =0; i<cadena.length(); i++){
+            if(cadena.charAt(i) == letraA){
+                contador++;
+            }
+        }
+        System.out.println("Numero de a en la cadena es: "+ contador);
     }
 }
